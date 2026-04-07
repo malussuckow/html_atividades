@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Tabelas</title>
+    <style>
+        table td,
+        table th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 800px;
+        }
+
+
+        .tables {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <div class="tables">
+        <table>
+            <caption>Tabelas com informações pessoais -tabela exemplo desalinhada</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>idade</th>
+                    <th>Cidade</th>
+                    <th>Pais</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joao</td>
+                    <td rowspan="2">12</td>
+                    <td>Londre</td>
+                    <td>Inglaterra</td>
+                </tr>
+                <tr>
+                    <td>Maria Luiza</td>
+                    <td>18</td>
+                    <td>Miame</td>
+                    <td>Estados Unidos</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">ISSO É APENAS UM TESTE</td>
+                </tr>
+            </tfoot>
+        </table><br>
+        <br>
+        <table>
+            <caption>Tabelas com valores-tabela exemplo alinhadinha</caption>
+            <thead>
+                <tr>
+                    <th>lazer</th>
+                    <th>aluguel</th>
+                    <th>viagem</th>
+                    <th>mercado</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>200</td>
+                    <td>1500</td>
+                    <td>518</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>8000</td>
+                    <td>618</td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>total:</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>1318</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
